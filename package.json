@@ -1,7 +1,7 @@
 {
-  "name": "jsu",
+  "name": "jsupdate",
   "description": "A library for deeply nested immutable object updates using a simple path notation",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -14,9 +14,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thetrav/jsu.git"
+    "url": "https://github.com/thetrav/jsupdate.git"
   },
-  "author": "Travis Dixon",
+  "author": "Travis Dixon <the.trav@gmail.com>",
   "license": "Apache2",
   "devDependencies": {
     "@babel/core": "^7.1.5",
