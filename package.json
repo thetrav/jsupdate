@@ -1,0 +1,27 @@
+{
+  "name": "jsu",
+  "description": "A library for deeply nested immutable object updates using a simple path notation",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thetrav/jsu.git"
+  },
+  "author": "Travis Dixon",
+  "license": "Apache2",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "23.6.0"
+  }
+}
