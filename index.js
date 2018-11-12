@@ -1,7 +1,7 @@
 const array = /(\w+)\[(\d+)]/;
 
 function jsu(obj, path, fn) {
-  if(typeof path === 'string' || path instanceof String) {
+  if(typeof path === "string" || path instanceof String) {
     return jsu(obj, parse(path), fn);
   }
   
@@ -18,7 +18,7 @@ function jsu(obj, path, fn) {
 
     const newArray = obj[name].map((v, i) => {
       return (i === index) ? jsu(v, tail, fn) : v;
-    })
+    });
 
     return {...obj, [name]: newArray};
   } else {
@@ -27,7 +27,7 @@ function jsu(obj, path, fn) {
 }
 
 function parse(path) {
-  return path.split(".")
+  return path.split(".");
 }
 
-export default jsu
+export default jsu;

@@ -16,7 +16,10 @@ var original = {
   ]
 };
 
-var setField = jsu(original, "bars[0].ork", (oldOrk) => {...oldOrk, ork: "newOrk1Value"});
+var setField = jsu(original, "bars[0].ork", (_) => "newOrk1Value");
 assert(original.bars[0] === {ork: "ork1Value", bif: "bif1Value"});
 assert(setField.bars[0] === {ork: "newOrk1Value", bif: "bif1Value"});
+
+var transformField = jsu(original, "foo", (v) => v.toUpperCase());
+assert(transformField.foo === "FOOVALUE");
 ```
